@@ -1,12 +1,11 @@
 <template name="list">
     <ul>
         {{ #each users }}
-            <li>
-                <span>{{ firstName }}</span>
-                <span>{{ secondName }}</span>
-                <span>{{ github }}</span>
+            <li class="listItem">
+                <p>{{ firstName }} {{ secondName }}</p>
+                <a href="{{ github }}" target="_blank">{{ github }}</a>
+                <button name="delete" class="delete" id="{{ _id }}" type="submit">Supprimer</button>
             </li>
-            <button name="delete" class="delete" id="{{ _id }}" type="submit">Supprimer</button>
         {{/each }}
     </ul>
 </template>

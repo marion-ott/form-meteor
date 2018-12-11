@@ -1,4 +1,131 @@
 body {
   padding: 10px;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(#dfa365, #d09ea6);
+  height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  position: relative;
+  width: 100%;
+  padding-bottom: 15px;
+}
+
+h1:after {
+  content: '';
+  position: absolute;
+  background-color: white;
+  width: 20%;
+  height: 1px;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+form {
+  margin: 40px auto 0 auto;
+  background-color: white;
+  width: 400px;
+  padding: 15px 0;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.26);
+}
+
+input {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  height: 30px;
+  margin-bottom: 10px;
+  border-radius: 2px;
+  border: solid 1px #CCCCCC;
+  padding: 5px 10px;
+  font-size: 16px;
+  color: #3e3e3e;
+}
+
+input::placeholder {
+  color: #AAAAAA;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+form p {
+  text-align: center;
+  color: #3e3e3e;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+button {
+  display: block;
+  padding: 8px 20px;
+  border: none;
+  background-color: #CCCCCC;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: ease .26s all;
+  border-radius: 2px;
+}
+
+button:hover {
+  background-color: #12ad5e;
+  color: white;
+}
+
+form button {
+  margin: 0 auto;
+}
+
+.delete {
+  background-color: #ff4a3a;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+}
+
+.delete:hover {
+  background-color: #ff213e;
+}
+
+ul {
+  width: 600px;
+  margin: 30px auto 0 auto;
+}
+
+li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+li:not(:last-child) {
+  border-bottom: solid 0.5px rgba(255,255,255,0.6);
+}
+
+li a {
+  margin: 0 15px;
+  color: white;
+  font-weight: 400;
+}
+
+li p {
+  color: white;
+  font-weight: 200;
+}
+
+li button {
+  margin-left: auto;
+}
+
+li a:hover {
+  color: #4587cc;
 }
