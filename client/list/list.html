@@ -1,0 +1,12 @@
+<template name="list">
+    <ul>
+        {{ #each users }}
+            <li>
+                <span>{{ firstName }}</span>
+                <span>{{ secondName }}</span>
+                <span>{{ github }}</span>
+            </li>
+            <button name="delete" class="delete" id="{{ _id }}" type="submit">Supprimer</button>
+        {{/each }}
+    </ul>
+</template>
